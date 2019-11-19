@@ -1,0 +1,16 @@
+html {
+    font-style: 15px;
+}
+
+.first {
+    color: green;
+}
+
+.second {
+    color: #bc3030;
+}
+
+.third {
+    color: yellow;
+    border: 7px dotted #09b292;
+}
