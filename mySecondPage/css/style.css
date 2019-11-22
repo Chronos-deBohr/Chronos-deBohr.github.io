@@ -1,0 +1,31 @@
+html {
+   font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+.block {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.block__el {
+    padding-bottom: 1rem;
+}
+
+img {
+    padding-top: .5rem;
+    width: 40rem;
+    height: auto;    
+}
+
+.footer {
+    text-align: center;
+}

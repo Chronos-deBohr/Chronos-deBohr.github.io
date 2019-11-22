@@ -1,0 +1,59 @@
+html {
+   font-size: 15px;
+}
+
+body {
+    margin: 0;
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.header {
+    margin: 2rem 0 3rem 0;
+}
+
+.header__title {
+    text-align: center;
+}
+
+.indent {
+    padding: 0 2rem 0 2rem;
+}
+
+.indent__subtitle {
+    text-align: center;
+}
+.highlighting {
+    font-style: oblique;
+}
+
+/* list */
+.list__disk {
+    list-style: disc;
+}
+
+.list__symbol {
+    padding-left: 1.6rem;
+    padding-right: 1rem;
+}
+
+.list__number {
+    list-style: none;
+}
+
+.list__number:before {
+    content: "\00A7";
+    padding-right: .6rem;
+}
+
+.list__circle {
+    list-style: circle;
+}
+
+
+
+
+
