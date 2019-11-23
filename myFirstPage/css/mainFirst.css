@@ -1,0 +1,8 @@
+.ordinary {
+    text-decoration: underline;
+    transition: font-weight .2s;
+}
+
+.ordinary:hover {
+    font-weight: 100;
+}

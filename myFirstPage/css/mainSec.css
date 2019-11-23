@@ -1,0 +1,7 @@
+#P1:hover {
+    font-size: 1.2rem;
+}
+
+#P2:hover {
+    transform: skewy(-2deg);    
+}
