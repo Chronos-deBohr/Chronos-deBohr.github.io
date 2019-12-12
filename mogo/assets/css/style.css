@@ -524,7 +524,7 @@ hr {
     color: #fff;
 }
 
-.stat__item: last-child {
+.stat__item:last-child {
     border-right: 1px solid #b5eae0;
 }
 
