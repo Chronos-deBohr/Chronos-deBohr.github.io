@@ -150,9 +150,6 @@
 }
 
 @media (max-width: 767px) {
-	 body {
-		display: none;
-	}
 	.swiper-slide .bgimg1 {
 		background-image: url(../images/mobile/Photo1Mobile.jpg);
 	 }
