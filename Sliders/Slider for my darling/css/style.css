@@ -72,6 +72,7 @@
 }
 .swiper-slide .content:not(.right) {
   position: absolute;
+  background-repeat: no-repeat;
   top: 30%;
   left: 0;
   width: 50%;
@@ -81,6 +82,7 @@
 
 .swiper-slide .right {
   position: absolute;
+  background-repeat: no-repeat;
   top: 18%;
   right: 0; 
   left: none;
