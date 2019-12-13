@@ -131,3 +131,16 @@
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
 }
+
+@media (max-width: 575px) {
+  .swiper-slide .slide-bgimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
