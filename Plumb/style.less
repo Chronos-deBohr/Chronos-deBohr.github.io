@@ -1,0 +1,90 @@
+// compress: true
+@import "vars";
+
+
+html {
+    font-size: 20px;
+ }
+ 
+ body {
+     margin: 0;
+     font-family: 'Roboto';
+     font-size: 1rem;
+     color: @black;
+ 
+     &.no-scroll {
+         overflow: hidden;
+     }
+ }
+ 
+ a {
+     text-decoration: none;
+ }
+ 
+ h1, h2, h3, h4, h5, h6, p {
+     margin: 0;
+     font-size: 1rem;
+     padding:0;
+ }
+ 
+ *,
+ *:before,
+ *:after {
+     box-sizing: border-box;
+ }
+
+ .divider::after {
+	display: inline-block;
+	content: '';
+	width: 100px;
+	height: 0;
+	border-top: 2px solid #0c65ed;
+	animation: moreLoop 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+}
+
+@keyframes moreLoop {
+	0% {
+		transform: scale(0, 1);
+		transform-origin: left;
+	}
+	47% {
+		transform: scale(1, 1);
+		transform-origin: left;
+	}
+	48% {
+		transform: scale(1, 1);
+		transform-origin: right;
+	}
+	95% {
+		transform: scale(0, 1);
+		transform-origin: right;
+	}
+	96% {
+		transform: scale(0, 1);
+		transform-origin: left;
+	}
+	100% {
+		transform: scale(0, 1);
+	}
+}
+.title {
+	font-size: 1.3rem;
+	font-weight: 500;
+  }
+  
+  .suptitle{
+	font-size: .9rem;
+  }
+
+ section {
+     margin: 45px 0 45px 0;
+ }
+/* Blocks*/
+
+@import "blocks/header";
+@import "blocks/slider";
+@import "blocks/container";
+@import "blocks/nav";
+@import "blocks/about-section";
+@import "blocks/services";
+@import "blocks/choose-us";

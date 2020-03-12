@@ -1,0 +1,72 @@
+// main: ../style.less
+
+.services {
+  background-color: #282945;
+}
+.container-services {
+  margin-bottom: 5%;
+}
+.services__content {
+  padding-top: 5%;
+  height: 10%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.services__title{
+  color: #C7C5C5;
+}
+.services__suptitle {
+  max-width: 60%;
+  color: @white;
+}
+.works {
+  display: flex;
+  padding: 0 2vw 0 2vw;
+  flex-wrap: nowrap;
+  padding-bottom: 5%;
+
+}
+.works__col {
+    flex: 1 1 0;
+    padding-right: 2vw;
+    &:last-child{
+        padding-right: 0;
+    }
+}
+
+.works__item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2vw;
+    background: rgba(0,0, 0, .5);
+    opacity: 1;
+    &:hover .works__image {
+      opacity: .5;
+    }
+    &:hover .works__info {
+      opacity: 1;
+    }
+}
+.works__image {
+    display: block;
+    width: 30.33vw;
+    transition: linear .3s;
+}
+
+.works__info {
+  position: absolute;
+  opacity: 0;
+  color: @white;
+  transition: linear .3s;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+
