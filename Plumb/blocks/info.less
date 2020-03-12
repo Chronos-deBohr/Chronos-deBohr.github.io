@@ -1,0 +1,125 @@
+// main: ../style.less
+
+.info {
+    background-color: #282945;
+}
+.info__content {
+    color: @white;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 5%;
+    height: 10%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5%;
+}
+.shedule__img, .contact__img{
+    color: @white;
+    font-size: 50px;
+}
+.contact__img {
+    transform: rotate(-45deg);
+}
+
+.shedule__caption, .contact__caption {
+    font-weight: 300;
+    padding-top: .5rem;
+}
+.shedule__data, .contact__data{
+    color: rgba(255, 255, 255, .6);
+    padding: 1rem 0 3.5rem 0;
+    font-size: .8rem;
+    line-height: 1.2rem;
+}
+
+.phone__number {
+    color: @white;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.info__offer {
+    align-self: flex-start;
+    position: relative;
+    padding: 0 10% 0 10%;
+
+    &::after {
+        position: absolute;
+        right: 0;
+        content: '';
+        top: 50%;
+        width: 0;
+        height: 60px;
+        border-left: 1px solid rgba(255,255,255,.7);
+        transform: translateY(-50%);
+    }
+    &::before {
+        position: absolute;
+        left: 0;
+        content: '';
+        top: 50%;
+        width: 0;
+        height: 60px;
+        border-left: 1px solid rgba(255,255,255,.7);
+        transform: translateY(-50%);
+    }
+}
+
+.offer__caption {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+.offer__btn {
+    margin-top: 20%;
+    color: @white;
+    padding: .7rem 2.5rem;
+    background-color: transparent;
+    border: 1px solid @white ;
+    border-radius: 40px;
+    font-size: 1rem;
+    font-weight: 400;
+    box-shadow: 2px 5px 10px @black;
+    &:hover {
+        background-color: rgba(255, 255, 255, .2);
+        transition: .2s linear;
+  }
+}
+
+
+.pulsate-bck {
+	-webkit-animation: pulsate-bck 2s ease-in-out infinite both;
+	        animation: pulsate-bck 2s ease-in-out infinite both;
+}
+
+@-webkit-keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes pulsate-bck {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+    50% {
+      -webkit-transform: scale(0.9);
+              transform: scale(0.9);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  
