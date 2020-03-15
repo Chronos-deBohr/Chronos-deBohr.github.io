@@ -64,7 +64,7 @@ $(function() {
         infinite: true,
         fae: true,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
     });
 
 

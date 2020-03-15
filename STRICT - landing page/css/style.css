@@ -81,6 +81,7 @@ header .logo {
     padding-top: 30px;
 }
 
+/* container2 */
 .container2 {
     background-image: url('../images/top_background.png');
     height: 800px;
@@ -382,13 +383,33 @@ footer {
     margin-right: 0;
 }
 
+@media (max-width: 1230px) {
+    .center {
+        width: 90%;
+    }
+}
 
+@media (max-width: 990px) {
+    .container2 h1 {
+        font-size: 110px;
+    }
+    
+    .container2 .line {
+        margin: 25px auto 0 auto;
+        width: 520px;
+}
 
+@media (max-width: 770px) {
+    
+}
 
+@media (max-width: 575px) {
+    
+}
 
-
-
-
+@media (max-width: 320px) {
+    
+}
 
 
 
