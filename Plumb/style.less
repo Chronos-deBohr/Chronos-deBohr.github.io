@@ -16,6 +16,10 @@ html {
          overflow: hidden;
      }
  }
+ .btn {
+	font-weight: 700;
+	font-style: italic;
+}
  
  a {
      text-decoration: none;
@@ -41,6 +45,7 @@ html {
 	border-top: 2px solid #0c65ed;
 	animation: moreLoop 2.5s cubic-bezier(0.77, 0, 0.175, 1) infinite;
 }
+
 
 @keyframes moreLoop {
 	0% {
@@ -69,10 +74,12 @@ html {
 }
 .title {
 	font-size: 1.3rem;
-	font-weight: 500;
+	font-family: 'Nunito', sans-serif;
+	font-weight: 700;
+	font-style: italic;
   }
   
-  .suptitle{
+  .subtitle{
 	font-size: .9rem;
   }
 
@@ -89,3 +96,5 @@ html {
 @import "blocks/services";
 @import "blocks/choose-us";
 @import "blocks/info";
+@import "blocks/faq";
+@import "blocks/footer";

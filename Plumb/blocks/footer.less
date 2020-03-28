@@ -1,0 +1,143 @@
+// main: ../style.less
+.footer {
+    margin-bottom: .5rem;
+}
+.footer-container {
+    position: relative;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: .5rem 0 .5rem 0;
+    border-top: 1px solid #989CED;
+    border-bottom: 1px solid #989CED;
+}
+.slider-footer{
+    width: 40%;
+    margin: 0 5% 0 3%;
+}
+.review-item {
+    display: flex;
+    text-align: start   ;
+    justify-content: center;
+}
+/* Заголовок слайда */
+.review-text {
+    font-style: italic;
+    color: @black;
+    font-size: .9rem;
+    width: 90%;
+}
+.review-autor {
+    font-weight: 700;
+    text-align: end;
+    margin: 1rem 0 .5rem 0;
+}
+/* Кружочки */
+.slider-footer-dots {
+    text-align: center;
+    margin-right: 3rem;
+}
+.slider-footer-dots_item{
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: transparent;
+    border: 1px @blue solid;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active-footer,
+.slider-footer-dots_item:hover {
+    background-color: @blue;
+}
+/* Анимация слайдов */
+.slider-footer .review-item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.footer-nav {
+    position: relative;
+    padding: 0 5% 0 5%;
+    justify-self: left;
+    text-align: center;
+    &::before {
+        position: absolute;
+        left: 0;
+        content: '';
+        top: 50%;
+        width: 0;
+        height: 200px;
+        border-left: .5px solid #989CED;
+        transform: translateY(-50%);
+    }
+    &::after {
+        position: absolute;
+        right: 0;
+        content: '';
+        top: 50%;
+        width: 0;
+        height: 200px;
+        border-left: .5px solid #989CED;
+        transform: translateY(-50%);
+    }
+}
+.nav__item {
+    margin-bottom: 1rem;
+    font-size: .9rem;
+}
+.link {
+    color: @black;
+    transition: .2s;
+    &:hover {
+        color: @blue;
+    }
+}
+
+.policy-column {
+    height: 100%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.city__img {
+    font-size: 70px;
+    color: #282945;
+}
+.policy__offer {
+    padding: .2rem 0 1.5rem 0;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.allRights {
+    font-size: .7rem;
+    align-self: flex-end;
+}
