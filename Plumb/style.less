@@ -3,10 +3,13 @@
 
 
 html {
-    font-size: 20px;
- }
+	font-size: 20px;
+	overflow-x: hidden;
+	box-sizing: border-box
+ }	
  
  body {
+	box-sizing: border-box;
      margin: 0;
      font-family: 'Roboto';
      font-size: 1rem;
@@ -88,9 +91,9 @@ html {
  }
 /* Blocks*/
 
-@import "blocks/header";
 @import "blocks/slider";
 @import "blocks/container";
+@import "blocks/header";
 @import "blocks/nav";
 @import "blocks/about-section";
 @import "blocks/services";

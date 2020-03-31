@@ -6,9 +6,10 @@
     color: @white;
     border-bottom:  rgba(188, 188, 188, 0.45) .7px solid;
     width: 100%;
-    
 }
-
+.container-header {
+    max-width: 90%;
+}
 .header__inner {
     display: flex;
     position: relative;
@@ -16,4 +17,156 @@
     align-items: center;
     max-width: 1270px;
     height: 90px;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100%;
+    margin-left: 2.2rem;
+}
+
+.logo {
+    align-items: center;
+}
+
+.logo img {
+    width: 67px;
+    height: 67px;
+}
+
+
+.nav__link {
+    text-decoration: none;
+    color: @white;
+    padding-right: 3vw;
+    font-weight: 400;
+    transition: color .3s;
+
+    &:last-child {
+        padding-right: 0;
+    }
+
+    &:hover {
+        color: @blue;
+        text-decoration: none;
+    }
+}
+.call-me {
+    font-weight: 500;
+    text-align: center;
+}
+
+.call-me__description {
+    font-size: 0.65rem;
+    opacity: .7;
+}
+
+.call-me-number {
+    color:@white;
+    font-size: 1.1rem;
+}
+
+.button_wrap{
+    display: flex;
+    border-left: rgba(188, 188, 188, 0.45) .7px solid;
+    border-right: rgba(188, 188, 188, 0.45) .7px solid;
+    padding: 0 2rem;
+    margin-left: 3rem;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-toggle {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    padding: 10px 7px;
+    transition: all .3s ease;
+    text-align: center;
+    border: none;
+    color:@white;
+    background: none;
+    cursor: pointer;
+    font-size: 0;
+    line-height: 0;
+    outline: none;
+    text-transform: none;
+    overflow: visible;
+    &:hover .nav-toggle__item {
+        width: 20%;
+        transition: ease-in .3s;
+    }
+}
+
+
+.nav-toggle__item {
+    width: 25px;
+    display: inline-block;
+    height: 0;
+    border-top: 2px solid;
+    transition: all .3s ease;
+}
+
+
+.nav-toggle__item:before,
+.nav-toggle__item:after {
+    display: inline-block;
+    height: 0;
+    border-top: 2px solid;
+    transition: all .3s ease;
+    position: absolute;
+    left: 50%;
+    content: '';
+    width: 34px;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+}
+
+.nav-toggle__item:before {
+    top: 10px;
+}
+
+.nav-toggle__item:after {
+    bottom: 10px;
+}
+
+@media (max-width: 1230px) {
+    .nav__link {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .container-header {
+        max-width: 95%;
+    }
+    .nav__link {
+        font-size: .7rem;
+    }
+    .call-me-number {
+        font-size: .8rem;
+    }
+    .button_wrap {
+        padding: 0 1rem;
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 770px) {
+    .call-me {
+        display: none;
+    }
+    .phone {
+        display: none;
+    }
+}
+
+@media (max-width: 575px) {
+    .nav {
+        display: none;
+    }
+    .container-header {
+        max-width: 90%;
+    }
 }
