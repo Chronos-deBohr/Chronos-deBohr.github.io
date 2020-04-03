@@ -59,16 +59,23 @@ html, body {
   display: flex;
   justify-content: flex-start;
 }
-
+.container-sw {
+    display: flex;
+    width: 100%;
+    max-width: 90%;
+    margin: 0 auto;
+}
 .swiper-inner {
+  display: flex;
+  flex-direction: column;
   align-items: flex-start;
   width: 30%;
   text-align: start;
 }
 
-
 .swiper-title {
   font-size: 4rem;
+  font-weight: 600;
   text-transform: capitalize;
 }
 
@@ -98,6 +105,48 @@ html, body {
 }
 
 
+@media (max-width: 1230px) {
+  .swiper-title {
+    font-size: 4rem;
+  }
+}
 
+@media (max-width: 990px) {
+  .swiper-title {
+    font-size: 3rem;
+  }
+}
 
+@media (max-width: 770px) {
+  .swiper-title {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 575px) {
+  .swiper-inner {
+    width: 100%;
+    align-items: center;
+    text-align: start;
+    
+  }
+  .swiper-title {
+    font-size: 2.7rem;
+    font-weight: 500;
+  }
+  .swiper-subtitle {
+    font-size: .9rem;
+    width: 90%;
+    margin-bottom: 3.5rem;
+  }
+  .swiper-btn {
+    color: @white;
+    padding: .7rem 3rem;
+    background-color: transparent;
+    border: 1px solid @white ;
+    border-radius: 40px;
+    font-size: 1rem;
+    box-shadow: 2px 5px 10px @black;
+  }
+}
 

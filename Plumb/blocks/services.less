@@ -59,7 +59,6 @@
     width: 30.33vw;
     transition: linear .3s;
 }
-
 .works__info {
   position: absolute;
   opacity: 0;
@@ -67,6 +66,37 @@
   transition: linear .3s;
   font-size: 1.5rem;
   text-align: center;
+}
+
+@media (max-width: 575px) {
+  .container-services {
+    justify-content: center;
+  }
+  .services__subtitle {
+    width: 100%;
+    max-width: 100%;
+  }
+  .services__content {
+    padding-top: 5%;
+    width: 100%;
+    text-align: start;
+  }
+  .works {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+  }
+
+  .works__col {
+    padding-right: 0;
+    
+}
+
+  .works__image {
+    display: block;
+    width: 94.99vw;
+    transition: linear .3s;
+}
 }
 
 

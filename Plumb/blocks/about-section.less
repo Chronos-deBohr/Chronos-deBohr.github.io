@@ -9,6 +9,9 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.container-about {
+  display: flex;
+}
 
 .about__content {
   width: 40%;
@@ -16,4 +19,23 @@
 
 .about__request {
   width: 40%;
+}
+
+@media (max-width: 575px) {
+  .about {
+    background-size: 60% auto;
+    background-position: 170% 99%;
+  }
+  .container-about {
+    justify-content: center;
+  }
+  .about__subtitle {
+    width: 100%;
+    max-width: 100%;
+  }
+  .about__content {
+    padding-top: 5%;
+    width: 100%;
+    text-align: start;
+  }
 }
