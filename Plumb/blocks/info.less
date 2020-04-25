@@ -19,9 +19,6 @@
     color: @white;
     font-size: 50px;
 }
-.contact__img {
-    transform: rotate(-45deg);
-}
 
 .shedule__caption, .contact__caption {
     font-weight: 300;
@@ -121,6 +118,39 @@
     100% {
       -webkit-transform: scale(1);
               transform: scale(1);
+    }
+  }
+
+  @media (max-width: 575px) {
+
+    .info__content {
+        flex-direction: column;
+        padding: 10% 0;
+    }
+    .info__offer {
+        order: 3;
+        align-self: center;
+        &::after, &::before {
+            display: none;
+        }
+    }
+
+    .shedule__img, .contact__img {
+        font-size: 50px;
+        padding-right: 10%;
+    }
+    .info__shedule, .info__contact {
+        display: flex;
+        width: 80%;
+        align-items: center;
+    }
+
+    .offer__btn {
+        margin-top: 8%;
+    }
+
+    .shedule__data, .contact__data {
+        padding: 10% 0 20% 0;
     }
   }
   
