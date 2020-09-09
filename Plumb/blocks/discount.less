@@ -1,1 +1,83 @@
 // main: ../style.less
+.discount__content {
+    display: flex;
+}
+.discount__element {
+    display: inherit;
+    max-width: 33.33333%;
+    width: 100%;
+    text-align: center;
+    justify-content: space-around;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+.pricing {
+    min-height: 100%;
+    display: inherit;
+    width: 100%;
+    background: linear-gradient( #CAD6ED 30%, #fff 10%);
+    border: .5px solid @gray;
+    flex-direction: column;
+}
+.pricing-header {
+    width: 100%;
+}
+.pricing-title {
+
+}
+.pricing-subtitle {
+
+}
+.pricing-body {
+    width:100%;
+    text-align: center;
+}
+.pricing-price{
+    margin-left: 33%;
+    font-size: .8rem;
+    border: 1px solid @gray;
+    padding-top: 1rem;
+    background-color: #F1F1F1;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+}
+.pricing-size {
+    font-size: 1.5rem;
+}
+.pricing-information__text {
+    font-size: .8rem;
+}
+
+.pricing-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.pricing-line {
+    font-size: .8rem;
+    font-weight: 500;
+    list-style: none;
+    padding-bottom: .5rem;
+    &::after {
+        content:"";
+        position:absolute;
+        left:50%;
+        width:60%;
+        height:1.5px;
+        margin-left:-30%;
+        margin-top: 25px;
+        background: @gray;
+    }
+}
+.pricing-information {
+}
+.pricing-information__icon {
+    
+}
+
+.pricing-information__text {
+
+}
