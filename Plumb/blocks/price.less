@@ -18,6 +18,7 @@
     border: 1px solid @black;
 }
 tbody {
+    font-size: 1rem;
 }
 tr {
 }
@@ -47,4 +48,19 @@ td {
 }
 .sale {
     color: red;
+}
+
+@media (max-width: 575px) {
+    tbody {
+        font-size: .8rem;
+    }
+    th {
+        padding: 1vh 1vw 1vh 3vw;
+    }
+    td{
+
+        &:first-child {
+            padding-left: 3vw;
+        }
+    }
 }

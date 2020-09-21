@@ -41,6 +41,7 @@
 .works__col {
     /* flex: 1 1 0;*/
     padding-right: 2vw;
+    flex-direction: column;
     &:last-child{
         padding-right: 0;
     }
@@ -80,7 +81,7 @@
     justify-content: center;
   }
   .services__subtitle {
-    width: 100%;
+    width: 90%;
     max-width: 100%;
   }
   .services__content {
@@ -90,15 +91,23 @@
   }
   .works {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
-    padding-bottom: 0;
+    padding: 0;
   }
   .works__col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-right: 0;
+    width: 100%;
+}
+.works__item {
+  width: 96%;
 }
   .works__image {
     display: block;
-    width: 95.9vw;
+    width: 100%;
     transition: linear .3s;
 }
 }
