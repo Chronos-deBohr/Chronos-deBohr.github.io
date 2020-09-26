@@ -22,17 +22,15 @@
                     <img src="./images/Logo.png" alt="logo">
                 </div>
                 <nav class="nav" id="nav">
-                    <a class="nav__link  nav__link-black active" href="#">Главная</a>
+                    <a class="nav__link nav__link-black" href="#">Главная</a>
                     <a class="nav__link nav__link-black" href="#">О нас</a>
                     <a class="nav__link nav__link-black" href="#">Услуги</a>
                     <a class="nav__link nav__link-black" href="#">Цены</a>
                     <a class="nav__link nav__link-black" href="#">Контакты</a>
                 </nav>
-                <div class="button_wrap">
                     <button class="nav-toggle nav-toggle-black" id="nav_toggle" type="button">
                         <span class="nav-toggle__item"></span>
                     </button>
-                </div>
                 <div class="call-me-black">
                     <div class="call-me__description">
                         Звоните по любым вопросам
@@ -67,46 +65,65 @@
             </div>
         </div>
        </div>
-       <div class="works">
-           <div class="works__col">
-               <div class="works__item">
-                   <img class="works__image" src="./images/Plumbing/PlumbingWhite.webp" alt="">
-                   <div class="works__info">Сантехника</div> 
-               </div>
-   
-               <div class="works__item">
-                   <img class="works__image" src="./images/HouseholdPlumbing/HouseholdPlumbingWhite.webp" alt="">
-                   <div class="works__info">Установка <br>и подключение <br>бытовой техники
-                   </div>
-               </div>
-           </div>
-           <div class="works__col">
-               <div class="works__item">
-                   <img class="works__image" src="./images/WaterSystem/WaterSystemWhite.webp" alt="">
-                   <div class="works__info">Монтаж систем <br>водоснабжения
-                   </div>
-               </div>
-   
-               <div class="works__item">
-                   <img class="works__image" src="./images/PlumbRepair/PlumbRepairWhite.webp" alt="">
-                   <div class="works__info">Ремонт <br>сантехники
-                   </div>
-               </div>
-           </div>
-           <div class="works__col">
-               <div class="works__item">
-                   <img class="works__image" src="./images/HeatingSystem/HeatingSystemWhite.webp" alt="">
-                   <div class="works__info">Монтаж <br>систем отопления
-                   </div>
-               </div>
-   
-               <div class="works__item">
-                   <img class="works__image" src="./images/Cottage/CottageWhite.webp" alt="">
-                   <div class="works__info">Коттеджи
-                   </div>
-               </div>
-           </div>
-       </div>
+    <div class="works">
+        <div class="works__col">
+            <div class="works__item">
+                <picture>
+                    <source class="works__image" srcset="./images/Plumbing/PlumbingWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/Plumbing/PlumbingWhite.jpg" alt="">
+                </picture>
+                <div class="works__info">Сантехника</div> 
+            </div>
+
+            <div class="works__item">
+                <picture>
+                    <source class="works__image" srcset="./images/HouseholdPlumbing/HouseholdPlumbingWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/HouseholdPlumbing/HouseholdPlumbingWhite.jpg" alt="">
+                </picture>
+                <div class="works__info">Установка <br>и подключение <br>бытовой техники
+                </div>
+            </div>
+        </div>
+        <div class="works__col">
+            <div class="works__item">
+                <picture>
+                    <source class="works__image" srcset="./images/WaterSystem/WaterSystemWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/WaterSystem/WaterSystemWhite.jpg" alt="">
+                </picture>
+                <div class="works__info">Монтаж систем <br>водоснабжения
+                </div>
+            </div>
+
+            <div class="works__item">
+                <picture>
+                    <source class="works__image" srcset="./images/PlumbRepair/PlumbRepairWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/Plumbing/PlumbRepair/PlumbRepairWhite.jpg" alt="">
+                </picture>
+                <div class="works__info">Ремонт <br>сантехники
+                </div>
+            </div>
+        </div>
+        <div class="works__col">
+            <div class="works__item">
+                <picture>
+                    <source class="works__image" srcset="./images/HeatingSystem/HeatingSystemWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/HeatingSystem/HeatingSystemWhite.jpg" alt="">
+                </picture>
+                <div class="works__info">Монтаж <br>систем отопления
+                </div>
+            </div>
+
+            <div class="works__item">
+                <picture>
+                    <source class="works__image" srcset="./images/Cottage/CottageWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/Cottage/CottageWhite.jpg" alt="">
+                </picture>
+                <div class="works__info">Коттеджи
+                </div>
+            </div>
+        </div>
+        
+    </div>
     </section>
     <section class="info">
         <div class="container">
@@ -193,8 +210,11 @@
         </div>
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/app.js"></script>
+   
 
 </body>
 </html>
