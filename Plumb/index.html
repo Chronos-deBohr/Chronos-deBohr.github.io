@@ -19,7 +19,7 @@
     <div class="container container-header">
         <div class="header__inner">
             <div class="logo">
-                <img src="./images/Logo.png" alt="logo">
+                <img src="./images/Logo4.png" alt="logo">
             </div>
             <nav class="nav" id="nav">
                 <a class="nav__link" href="#">Главная</a>
@@ -125,38 +125,56 @@
     <div class="works">
         <div class="works__col">
             <div class="works__item">
-                <img class="works__image" src="./images/Plumbing/PlumbingWhite.webp" alt="">
+                <picture>
+                    <source class="works__image" srcset="./images/Plumbing/PlumbingWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/Plumbing/PlumbingWhite.jpg" alt="">
+                </picture>
                 <div class="works__info">Сантехника</div> 
             </div>
 
             <div class="works__item">
-                <img class="works__image" src="./images/HouseholdPlumbing/HouseholdPlumbingWhite.webp" alt="">
+                <picture>
+                    <source class="works__image" srcset="./images/HouseholdPlumbing/HouseholdPlumbingWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/HouseholdPlumbing/HouseholdPlumbingWhite.jpg" alt="">
+                </picture>
                 <div class="works__info">Установка <br>и подключение <br>бытовой техники
                 </div>
             </div>
         </div>
         <div class="works__col">
             <div class="works__item">
-                <img class="works__image" src="./images/WaterSystem/WaterSystemWhite.webp" alt="">
+                <picture>
+                    <source class="works__image" srcset="./images/WaterSystem/WaterSystemWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/WaterSystem/WaterSystemWhite.jpg" alt="">
+                </picture>
                 <div class="works__info">Монтаж систем <br>водоснабжения
                 </div>
             </div>
 
             <div class="works__item">
-                <img class="works__image" src="./images/PlumbRepair/PlumbRepairWhite.webp" alt="">
+                <picture>
+                    <source class="works__image" srcset="./images/PlumbRepair/PlumbRepairWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/Plumbing/PlumbRepair/PlumbRepairWhite.jpg" alt="">
+                </picture>
                 <div class="works__info">Ремонт <br>сантехники
                 </div>
             </div>
         </div>
         <div class="works__col">
             <div class="works__item">
-                <img class="works__image" src="./images/HeatingSystem/HeatingSystemWhite.webp" alt="">
+                <picture>
+                    <source class="works__image" srcset="./images/HeatingSystem/HeatingSystemWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/HeatingSystem/HeatingSystemWhite.jpg" alt="">
+                </picture>
                 <div class="works__info">Монтаж <br>систем отопления
                 </div>
             </div>
 
             <div class="works__item">
-                <img class="works__image" src="./images/Cottage/CottageWhite.webp" alt="">
+                <picture>
+                    <source class="works__image" srcset="./images/Cottage/CottageWhite.webp" type="image/webp">
+                    <img class="works__image" src="./images/Cottage/CottageWhite.jpg" alt="">
+                </picture>
                 <div class="works__info">Коттеджи
                 </div>
             </div>
@@ -212,34 +230,51 @@
             <div class="subtitle faq__subtitle">Если Вам требуется более подробная информация, пожалуйуста, не стесняйтесь обращаться к нам.</div>
         </div>
             <div class="faq__inner">
+                <div class="accordion">
                 <div class="faq__column">
-                    <div class="faq__item">
-                        <div class="faq__question">Есть ли какие-либо неожиданные расходы?</div>
-                        <div class="faq__answer">Никаких сюрпризов. Мы работаем с прозрачными ценами, которые заранее оговорены в строительных расчетах.</div>
+                    <div class="faq__item" data-collapse="#wedo_1">
+                        <div class="accordion__header">
+                            <div class="accordion__title">Есть ли какие-либо неожиданные расходы?</div>
+                        </div>
+                        <div class="accordion__content" id="wedo_1">Никаких сюрпризов. Мы работаем с прозрачными ценами, которые заранее оговорены в строительных расчетах.
+
+                        </div>
                     </div>
-                    <div class="faq__item">
-                        <div class="faq__question">Вы работаете только в черте Минска?</div>
-                        <div class="faq__answer">Мы помогаем нашим клиентам во всех 9-ти районах Минска. Также выезжаем по заказам по всей Минской области.</div>
+                    <div class="faq__item" data-collapse="#wedo_2">
+                        <div class="accordion__header">
+                            <div class="accordion__title">Вы работаете только в черте Минска?</div>
+                        </div>
+                        <div class="accordion__content" id="wedo_2">Мы помогаем нашим клиентам во всех 9-ти районах Минска. Также выезжаем по заказам по всей Минской области.</div>
                     </div>
-                    <div class="faq__item">
-                        <div class="faq__question">Вы работаете только в черте Минска?</div>
-                        <div class="faq__answer">Мы помогаем нашим клиентам во всех 9-ти районах Минска. Также выезжаем по заказам по всей Минской области.</div>
+                    <div class="faq__item" data-collapse="#wedo_3">
+                        <div class="accordion__header">
+                            <div class="accordion__title">Вы работаете только в черте Минска?</div>
+                        </div>
+                        <div class="accordion__content" id="wedo_3">Мы помогаем нашим клиентам во всех 9-ти районах Минска. Также выезжаем по заказам по всей Минской области.</div>
                     </div>
                 </div>
-
                 <div class="faq__column">
-                    <div class="faq__item">
-                        <div class="faq__question">Есть ли какие-либо неожиданные расходы?</div>
-                        <div class="faq__answer">Никаких сюрпризов. Мы работаем с прозрачными ценами, которые заранее оговорены в строительных расчетах.</div>
+                    <div class="faq__item" data-collapse="#wedo_4">
+                        <div class="accordion__header">
+                            <div class="accordion__title">Есть ли какие-либо неожиданные расходы?</div>
+                        </div>
+                        <div class="accordion__content" id="wedo_4">Никаких сюрпризов. Мы работаем с прозрачными ценами, которые заранее оговорены в строительных расчетах.
+
+                        </div>
                     </div>
-                    <div class="faq__item">
-                        <div class="faq__question">Вы работаете только в черте Минска?</div>
-                        <div class="faq__answer">Мы помогаем нашим клиентам во всех 9-ти районах Минска. Также выезжаем по заказам по всей Минской области.</div>
+                    <div class="faq__item" data-collapse="#wedo_5">
+                        <div class="accordion__header">
+                            <div class="accordion__title">Вы работаете только в черте Минска?</div>
+                        </div>
+                        <div class="accordion__content" id="wedo_5">Мы помогаем нашим клиентам во всех 9-ти районах Минска. Также выезжаем по заказам по всей Минской области.</div>
                     </div>
-                    <div class="faq__item">
-                        <div class="faq__question">Вы работаете только в черте Минска?</div>
-                        <div class="faq__answer">Мы помогаем нашим клиентам во всех 9-ти районах Минска. Также выезжаем по заказам по всей Минской области.</div>
+                    <div class="faq__item" data-collapse="#wedo_6">
+                        <div class="accordion__header">
+                            <div class="accordion__title">Вы работаете только в черте Минска?</div>
+                        </div>
+                        <div class="accordion__content" id="wedo_6">Мы помогаем нашим клиентам во всех 9-ти районах Минска. Также выезжаем по заказам по всей Минской области.</div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>
