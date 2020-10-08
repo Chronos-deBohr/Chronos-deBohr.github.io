@@ -14,129 +14,66 @@
     border-top: .3px solid rgba(152, 156, 237, .5);
     border-bottom: .3px solid rgba(152, 156, 237, .5);
 }
-.slider-footer{
-    width: 40%;
-    margin: 0 5% 0 3%;
-}
-.review-item {
-    display: flex;
-    text-align: start   ;
-    justify-content: center;
-}
-/* Заголовок слайда */
-.review-text {
-    font-style: italic;
-    color: @black;
-    font-size: .9rem;
-    width: 90%;
-}
-.review-autor {
-    font-weight: 700;
-    text-align: end;
-    margin: 1rem 0 .5rem 0;
-}
-/* Кружочки */
-.slider-footer-dots {
-    text-align: center;
-    margin-right: 3rem;
-}
-.slider-footer-dots_item{
-    cursor: pointer;
-    height: 12px;
-    width: 12px;
-    margin: 0 2px;
-    background-color: transparent;
-    border: 1px @blue solid;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.6s ease;
-}
-.active-footer,
-.slider-footer-dots_item:hover {
-    background-color: @blue;
-}
-/* Анимация слайдов */
-.slider-footer .review-item {
-    -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-@-webkit-keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
 
 .footer-nav {
+    display: flex;
     position: relative;
-    padding: 0 5% 0 5%;
+    margin-left: 5% ;
     justify-self: left;
-    text-align: center;
-    &::before {
-        position: absolute;
-        left: 0;
-        content: '';
-        top: 50%;
-        width: 0;
-        height: 200px;
-        border-left: .3px solid rgba(152, 156, 237, .8);
-        transform: translateY(-50%);
-    }
-    &::after {
-        position: absolute;
-        right: 0;
-        content: '';
-        top: 50%;
-        width: 0;
-        height: 200px;
-        border-left: .3px solid rgba(152, 156, 237, .8);
-        transform: translateY(-50%);
-    }
+    text-align: start;
 }
 .nav__item {
-    margin-bottom: 1rem;
+    display: inherit;
+    flex-direction: column;
+    margin-right: 3rem;
     font-size: .9rem;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.fat {
+    width: 25%;
+    display: inherit;
+    flex-direction: column;
+    margin-right: 3rem;
+    font-size: 1rem;
 }
 .link {
     color: @black;
     transition: .2s;
-    font-style: italic;
-    font-weight: 500;
     &:hover {
         color: @blue;
     }
+    &:first-child {
+        font-weight: 500;
+    }
 }
 
+.footer-subcontent {
+    display: flex;
+}
 .policy-column {
     height: 100%;
-    width: 40%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
+    justify-content: space-around;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    align-items: flex-end;
+
 }
 
 .city__img {
-    font-size: 70px;
+    display: flex;
+    align-items: flex-end;
+    font-size: 2.5rem;
     color: #282945;
 }
 .policy__offer {
-    padding: .2rem 0 1.5rem 0;
+    padding-left: .5rem;
     font-weight: 300;
     font-style: italic;
-    font-size: 1.3rem;
+    font-size: .8rem;
     text-align: center;
 }
 .footer__phone {
@@ -144,37 +81,65 @@
 }
 .allRights {
     font-size: .7rem;
-    align-self: flex-end;
+}
+.messengers-link {
+    margin-right: .2rem;
+}
+.fa-vk {
+    color: #4a76a8;
+    font-size: 1.2rem;
+}
+.fa-telegram {
+    color: rgb(75, 146, 212);
+    font-size: 1.2rem;
+}
+.fa-instagram {
+    color: #8d119c;
+    font-size: 1.2rem;
+}
+.fa-envelope {
+    color: #ec2525;
+    font-size: 1.2rem;
 }
 @media (max-width: 770px) {
-    .allRights {
-        width: 85%;
+    .nav__item {
+        margin-right: 1.5rem;
     }
 }
 
 @media (max-width: 575px) {
-
+    .footer-nav {
+        margin: 0 3% 0 3%;
+    }
+    .nav__item {
+        margin-right: 1rem;
+        font-size: .8rem;
+    }
+    .fat {
+        font-size: .8rem;
+    }
+    .sublink {
+        display: none;
+    }
     .slider-footer {
         display: none;
     }
-    .footer-nav {
-        width: 50%;
-        position: relative;
-        padding: 0 5% 0 10%;
-        justify-self: left;
-        text-align: start;
-        &::before {
-            display: none;
-        }
-        &::after {
-            display: none;
+    .policy-column {
+        flex-direction: column;
+        align-items: center;
+    }
+    .messengers {
+        display: flex;
+    }
+    .messengers-link {
+        padding-bottom: .5rem;
+        &:last-child {
+            padding-bottom: 0;
         }
     }
     .city__img {
         font-size: 50px;
-    }
-    .policy-column {
-        width: 70%;
+        display: none;
     }
     .policy__offer {
         font-size: 1rem;
