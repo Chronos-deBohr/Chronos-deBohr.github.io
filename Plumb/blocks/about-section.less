@@ -15,18 +15,34 @@
 
 .about__content {
   width: 40%;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
 }
 
 .about__request {
   width: 40%;
 }
-
+@media (max-width: 1170px) {
+  .container-about {
+    padding-left: 5%;
+  }
+}
+@media (max-width: 990px) {
+  .about {
+    height: 30%;
+  }
+  .about__content {
+    width: 60%;
+  }
+}
 @media (max-width: 575px) {
   .about {
     background: none;
   }
   .container-about {
     justify-content: center;
+    padding-left: 0;
   }
   .about__subtitle {
     width: 90%;
