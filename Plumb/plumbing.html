@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="180x180" href="./images//faviconblack/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images//faviconblack/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./images//faviconblack/favicon-16x16.png">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper.css">
@@ -27,6 +30,20 @@
                     <a class="nav__link nav__link-black" href="#">Услуги</a>
                     <a class="nav__link nav__link-black" href="#">Цены</a>
                     <a class="nav__link nav__link-black" href="#">Контакты</a>
+                    <div class="messengers messengers-top">
+                        <a class="messengers-link" href="мой вк">
+                            <i class="fab fa-vk"></i>
+                        </a>
+                        <a class="messengers-link" href="#">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                        <a class="messengers-link" href="#">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="messengers-link" href="#">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                    </div>
                 </nav>
                     <button class="nav-toggle nav-toggle-black" id="nav_toggle" type="button">
                         <span class="nav-toggle__item"></span>
@@ -165,52 +182,54 @@
             </div>
         </div>
     </section>
+
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-content">
-           <!-- slider -->
-               <div class="slider-footer">
-                   <div class="review-item">
-                       <div class="review-text">Сантехники выполнили работу быстро и качественно, очень эрудированные ребята в своем деле.  Огромным плюсом стала их вежливость!</div>
-                       <div class="review-autor">Машка Парашка</div>
-                   </div>
-               
-                   <div class="review-item">
-                       <div class="review-text">Сантехники выполнили работу быстро и качественно, очень эрудированные ребята в своем деле.  Огромным плюсом стала их вежливость!</div>
-                       <div class="review-autor">Машка Шалашка</div>
-                   </div>
-               
-                   <div class="review-item">
-                       <div class="review-text">Сантехники выполнили работу быстро и качественно, очень эрудированные ребята в своем деле.  Огромным плюсом стала их вежливость!</div>
-                       <div class="review-autor">Машка Ебанашка</div>
-                   </div>
-               
-                   <div class="slider-footer-dots">
-                       <span class="slider-footer-dots_item" onclick="currentSlide(1)"></span> 
-                       <span class="slider-footer-dots_item" onclick="currentSlide(2)"></span> 
-                       <span class="slider-footer-dots_item" onclick="currentSlide(3)"></span> 
-                   </div>
-               </div>
                <div class="footer-nav">
                        <div class="nav__item">
+                           <a href="" class="link">Главная</a>
+                       </div>
+                       <div class="nav__item">
+                           <a href="" class="link"><nobr>О нас</nobr></a>
+                       </div>
+                       <div class="nav__item fat">
                            <a href="" class="link">Услуги</a>
+                           <a href="" class="link sublink">Сантехника</a>
+                           <a href="" class="link sublink">Монтаж систем водоснабжения</a>
+                           <a href="" class="link sublink">Монтаж систем отопления</a>
+                           <a href="" class="link sublink">Установка и подключение бытовой техники</a>
+                           <a href="" class="link sublink">Ремонт сантехники</a>
+                           <a href="" class="link sublink">Коттеджи</a>
                        </div>
                        <div class="nav__item">
                            <a href="" class="link">Цены</a>
                        </div>
                        <div class="nav__item">
-                           <a href="" class="link">О нас</a>
-                       </div>
-                       <div class="nav__item">
                            <a href="" class="link">Контакты</a>
                        </div>
                </div>
+           </div>
+           <div class="footer-subcontent">
                <div class="policy-column">
                    <div class="city__img">
                    <i class="fas fa-city"></i>
+                   <div class="policy__offer">Работаем по всему Минску</div>
                    </div>
-                   <div class="policy__offer">Работаем по всему <br> Минску</div>
-                   <div class="footer__phone" href="tel:+375291501161">+375291501161</div>
+                   <div class="messengers">
+                       <a class="messengers-link" href="мой вк">
+                           <i class="fab fa-vk"></i>
+                       </a>
+                       <a class="messengers-link" href="#">
+                           <i class="fab fa-telegram"></i>
+                       </a>
+                       <a class="messengers-link" href="#">
+                           <i class="fab fa-instagram"></i>
+                       </a>
+                       <a class="messengers-link" href="#">
+                           <i class="far fa-envelope"></i>
+                       </a>
+                   </div>
                    <div class="allRights"> © 2020. All Rights Reserved. Privacy Policy</div>
                </div>
            </div>
@@ -220,6 +239,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/swiper.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.js"></script>
     <script src="js/app.js"></script>
    
 </body>
