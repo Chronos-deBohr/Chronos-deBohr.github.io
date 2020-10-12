@@ -187,7 +187,14 @@
         color: @blue;
     }
 }
-
+@media (max-width: 1170px) {
+    .single-page__photo {
+        margin-left: 3%;
+    }
+    .single-page__text {
+        margin-right: 3%;
+    }
+}
 @media (max-width: 575px) {
     .single-page__content {
         width: 96%;
@@ -200,6 +207,10 @@
         width: 100%;
         padding-right: 0;
         padding-bottom: 1rem;
+        margin-left: 0;
+    }
+    .single-page__text {
+        margin-right: 0%;
     }
     .single-page__image {
         opacity: 1;

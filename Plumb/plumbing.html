@@ -22,14 +22,16 @@
         <div class="container container-header">
             <div class="header__inner">
                 <div class="logo">
-                    <img src="./images/Logo1.png" alt="logo">
+                    <a href="./index.html">
+                        <img src="./images/Logo3.png" alt="logo">
+                    </a>
                 </div>
                 <nav class="nav" id="nav">
-                    <a class="nav__link  nav__link-black" href="#">Главная</a>
-                    <a class="nav__link nav__link-black" href="#">О нас</a>
-                    <a class="nav__link nav__link-black" href="#">Услуги</a>
-                    <a class="nav__link nav__link-black" href="#">Цены</a>
-                    <a class="nav__link nav__link-black" href="#">Контакты</a>
+                    <a class="nav__link nav__link-black" href="./index.html">Главная</a>
+                    <a class="nav__link nav__link-black" href="./aboutUs.html">О нас</a>
+                    <a class="nav__link nav__link-black" href="./services.html">Услуги</a>
+                    <a class="nav__link nav__link-black" href="./price.html">Цены</a>
+                    <a class="nav__link nav__link-black" href="./contact.html">Контакты</a>
                     <div class="messengers messengers-top">
                         <a class="messengers-link" href="мой вк">
                             <i class="fab fa-vk"></i>
@@ -63,10 +65,25 @@
         <div class="container">
             <div class="intro-content">
                 <div class="intro-title">Услуги</div>
-                <div class="breadcrumbs">
-                    <p class="crumb"><a class="crumb__link" href="./index.html">Главная</a> \ </p>
-                    <p class="crumb-active">&nbspУслуги</p>
-                </div>
+                <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs">
+                    <span class="crumb" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                        <a class="crumb__link" rel="nofollow" itemprop="item" title="Главная" href="./index.html">
+                           <span itemprop="name">Главная</span>
+                           <meta itemprop="position" content="1">
+                        </a>&nbsp&#187&nbsp
+                    </span>
+                    <span class="crumb" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                        <a class="crumb__link" itemprop="item" title=" Услуги" href="./services.html">
+                           <span itemprop="name"> Услуги</span>
+                           <meta itemprop="position" content="2">
+                        </a>&nbsp&#187&nbsp
+                    </span>
+                    <span class="crumb" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                           <span class="crumb-active" itemprop="name">Сантехника</span>
+                           <meta itemprop="position" content="3">
+                        </a>
+                    </span>
+                 </div>
             </div>
         </div>
     </section>
@@ -97,7 +114,7 @@
                     <source class="works__image" srcset="./images/Plumbing/Sink.webp" type="image/webp">
                     <img class="works__image" src="./images/Plumbing/Sink.jpg" alt="">
                 </picture>
-                   <div class="works__info">Установка умывальников</div>
+                   <div class="works__info">Установка раковин</div>
                 </a>
 
                <a class="works__item" href="#">
@@ -105,7 +122,7 @@
                     <source class="works__image" srcset="./images/Plumbing/Rack.webp" type="image/webp">
                     <img class="works__image" src="./images/Plumbing/Rack.jpg" alt="">
                 </picture>
-                <div class="works__info">Установка полотенцесушителей</div> 
+                <div class="works__info">Установка<br> полотенцесушителей</div> 
                 </a>
            </div>
            <div class="works__col">
