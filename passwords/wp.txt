@@ -1,2 +1,4 @@
 Chronos-deBohr
 fpofo3__@v20l-20lv22 f
+
+http://localhost/plumb/wordpress/wp-admin/
