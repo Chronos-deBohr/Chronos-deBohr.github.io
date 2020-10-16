@@ -18,9 +18,11 @@
 .statistic-content {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 1rem;
 }
 .stat-digit {
     font-size: 5rem;
+    margin-left: 5%;
  
 }
 .stat-character {
@@ -30,4 +32,20 @@
 }
 .stat-description {
     font-size: .8rem;
+}
+
+
+@media (max-width: 747px) {
+    .statistic-content {
+        flex-direction: column;
+    }
+    .stat {
+        padding: 2rem 0 2rem 0;
+    }
+}
+
+@media (max-width: 575px) {
+    .stat {
+        padding: 1.2rem 0 1.2rem 0;
+    }
 }
