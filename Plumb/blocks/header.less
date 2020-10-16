@@ -35,7 +35,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  height: 55vh;
   border-radius: 0% 0 0% 40%;
 }
 
@@ -172,6 +172,9 @@
 .call-me-number-black {
     color: @black;
 }
+.blue-nav {
+    display: none;
+}
 
 .messengers-top {
     display: none;
@@ -223,6 +226,18 @@
   
         background-color: #88b8d4;
         box-shadow: 0 0 64px 18px rgba(0,0,0,0.4) inset;
+    }
+    .blue-nav {
+        display: block;
+        color: @white;
+        font-weight: 500;
+        border: 2px solid @white;
+        border-radius: 40px;
+        padding: .4rem .8rem;
+        &:hover {
+            background-color: rgba(255, 255, 255, .2);
+            transition: .2s linear;
+      }
     }
 
     .nav__link {
