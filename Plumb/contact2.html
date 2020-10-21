@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper.css">
-    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="animate.min.css">
     <script src="wow.min.js"></script>
     <script>
@@ -65,30 +64,17 @@
             </div>
         </div>
     </header>
-    <div class="form-wrapper">
-    <form method="POST" id="feedback-form">
-        Как к Вам обращаться:
-        <input type="text" name="nameFF" required placeholder="Имя" x-autocompletetype="name">
-        Email для связи:
-        <input type="email" name="contactFF" required placeholder="адрес электронной почты" x-autocompletetype="email">
-        Введите сообщение, телефон  :
-        <textarea name="messageFF" required rows="5"></textarea>
-        <input type="submit" value="отправить">
-        </form>
-    </div>
-<?
-if (array_key_exists('messageFF', $_POST)) {
-   $to = 'mr.bplumbingminsk@gmail.com';
-   $subject = 'Заполнена контактная форма с '.$_SERVER['HTTP_REFERER'];
-   $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
-   $message = "Имя: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nСообщение: ".$_POST['messageFF'];
-   $headers = 'Content-type: text/plain; charset="utf-8"';
-   $headers .= "MIME-Version: 1.0\r\n";
-   $headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
-   mail($to, $subject, $message, $headers);
-   echo $_POST['nameFF'];
-}
-?>
+    <div id="form_141287_1"></div>
+    <script type="text/javascript">
+       (function (d, w, c) {
+           (w[c] = w[c] || []).push({formId:141287,host:"formdesigner.ru",formHeight:100, el: "form_141287_1",center: 1,scroll: 0});
+           var s = d.createElement("script"), g = "getElementsByTagName";
+           s.type = "text/javascript"; s.charset="UTF-8"; s.async = true;
+           s.src = (d.location.protocol == "https:" ? "https:" : "http:")+"//formdesigner.ru/js/iform.js";
+           var h=d[g]("head")[0] || d[g]("body")[0];
+           h.appendChild(s);
+       })(document, window, "fdforms");
+    </script>
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-content">
