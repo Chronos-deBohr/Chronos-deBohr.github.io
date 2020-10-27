@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap&subset=cyrillic-ext" rel="stylesheet">    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="swiper.css">
-    <link rel="stylesheet" href="form.css">
     <link rel="stylesheet" href="animate.min.css">
     <script src="wow.min.js"></script>
     <script>
@@ -65,30 +64,63 @@
             </div>
         </div>
     </header>
-    <div class="form-wrapper">
-    <form method="POST" id="feedback-form">
-        Как к Вам обращаться:
-        <input type="text" name="nameFF" required placeholder="Имя" x-autocompletetype="name">
-        Email для связи:
-        <input type="email" name="contactFF" required placeholder="адрес электронной почты" x-autocompletetype="email">
-        Введите сообщение, телефон  :
-        <textarea name="messageFF" required rows="5"></textarea>
-        <input type="submit" value="Отправить">
-        </form>
-    </div>
-<?
-if (array_key_exists('messageFF', $_POST)) {
-   $to = 'mr.bplumbingminsk@gmail.com';
-   $subject = 'Заполнена контактная форма с '.$_SERVER['HTTP_REFERER'];
-   $subject = "=?utf-8?b?". base64_encode($subject) ."?=";
-   $message = "Имя: ".$_POST['nameFF']."\nEmail: ".$_POST['contactFF']."\nIP: ".$_SERVER['REMOTE_ADDR']."\nСообщение: ".$_POST['messageFF'];
-   $headers = 'Content-type: text/plain; charset="utf-8"';
-   $headers .= "MIME-Version: 1.0\r\n";
-   $headers .= "Date: ". date('D, d M Y h:i:s O') ."\r\n";
-   mail($to, $subject, $message, $headers);
-   echo $_POST['nameFF'];
-}
-?>
+    <section class="intro intro-services">
+        <div class="container">
+            <div class="intro-content">
+                <div class="intro-title"><h1 class="seoh">Контакты</h1></div>
+                <div class="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList" id="breadcrumbs">
+                    <span class="crumb" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                        <a class="crumb__link" rel="nofollow" itemprop="item" title="Главная" href="./index.html">
+                           <span itemprop="name">Главная</span>
+                           <meta itemprop="position" content="1">
+                        </a>&nbsp&#187&nbsp
+                    </span>
+                    <span class="crumb" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
+                           <span class="crumb-active" itemprop="name">Контакты</span>
+                           <meta itemprop="position" content="2">
+                        </a>
+                    </span>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact-data">
+        <div class="container">
+            <div class="title-content">
+                <div class="title contact-title">
+                    Контактная информация
+                </div>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-wrapper">
+                <p class="contact-content__phrases">Вы можете связаться с нами несколькими способами:
+                <ol class="contact-list">
+                    <li>Позвонив по следующим номерам телефонов: <a class="phone__number__black" href="tel:+375291501161">+375291501161</a>(А1), <a class="phone__number__black" href="tel:+375336303513">+375336303513</a> (МТС)</li>
+                    <li>Написав нам в любом из следующих мессенджеров (нажмите на иконку, чтобы перейти по ссылке): <a class="messengers-link" href="https://vk.com/mrbplumbing">
+                        <i class="fab fa-vk"></i>
+                    </a>
+                    <a class="messengers-link" href="https://t.me/MrBplumbing">
+                        <i class="fab fa-telegram"></i>
+                    </a>
+                    <a class="messengers-link" href="https://www.instagram.com/mrbplumbingminsk/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="messengers-link" href="https://wa.me/375336303513">
+                     <i class="fab fa-whatsapp"></i>
+                    </a></li>
+                    <li>Отправив сообщение на почту mr.bplumbing&shy;minsk&shy;@gmail.com</li>
+                    <li>Оставив заявку в форме обратной связи чуть ниже</li>
+                </ol>
+                <p class="contact-content__phrases">Мы работаем с 8:00 до 19:00 в будние дни, в праздничные и выходные - с 9:00 до 17:00.</p>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="form">
+        <iframe class="myform" src="https://docs.google.com/forms/d/e/1FAIpQLSe8zhBcLsj4v8eCr_KtqSkXQySOItz_HFO0YxI6R19INIVY1g/viewform?embedded=true">Loading…</iframe>
+    </section>
+    
     <footer class="footer">
         <div class="container footer-container">
             <div class="footer-content">
