@@ -15,6 +15,7 @@
     <meta property="og:description" content="Краткая история становления лучшей команды мастеров"/>
     <meta name="keywords" content="о нас"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="swiper.css">
     <link rel="stylesheet" href="animate.min.css">
     <script src="wow.min.js"></script>
     <script>
@@ -79,12 +80,11 @@
                         <a class="crumb__link" rel="nofollow" itemprop="item" title="Главная" href="./index.html">
                            <span itemprop="name">Главная</span>
                            <meta itemprop="position" content="1">
-                        </a>&nbsp&#187&nbsp
+                        </a>&nbsp;&#187;&nbsp;
                     </span>
                     <span class="crumb" itemscope="" itemprop="itemListElement" itemtype="http://schema.org/ListItem">
                            <span class="crumb-active" itemprop="name">О нас</span>
                            <meta itemprop="position" content="2">
-                        </a>
                     </span>
                  </div>
             </div>
@@ -97,7 +97,7 @@
                     Наша история
                 </div>
                 <div class="divider"></div>
-                <div class="about-story__wrapper wow fadeInUp" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="15">
+                <div class="about-story__wrapper wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="15">
                     <p class="about-story">Команда Mr.B-plumbing изначально была основана семьёй, уставшей от профессионалов, не оправдывающих ожиданий. Мы постоянно слышали, мягко говоря, разочаровывающие речи от людей, затеивающих ремонтные работы. Поэтому в 2015 году мы решили сделать шаг вперёд и удовлетворить потребности жителей Минска в профессиональных, хорошо представленных и хорошо организованных услугах по сантехнике и отоплению, которые были бы надежными, своевременными и действительно ориентированными на клиента. Все мастера в нашей команде - хорошие друзья, работающие рука об руку уже много лет и понимающие друга друга с полуслова, что положительно сказывается на общей производительности.</p>
                     <p class="about-story">Устали считать бесконечные дни до прихода представителя ЖКХ или местных мастеров на все руки? Нет сил от постоянных и повторяющихся проблем с котлом, системой отопления, или протекающего крана?  Мы полностью готовы на случай, если вы желаете обновить элементы водопровода или сантехнического оборудования.</p>
                     <p class="about-story">Мы понимаем ваши страхи и разочарования при вызове сантехника. Никогда не знаешь, придут ли они вовремя и сколько будет стоить ремонт, если на это уйдет немного больше времени. С нами об этом можно не переживать! Мы сообщим вам приблизительную стоимость ещё до того, как мы посетим Ваш дом. 
@@ -121,7 +121,7 @@
                     <span class="stat-description">Клиентов, довольных <br> нашими услугами</span>
                 </div>
             </div>
-            <div class="stat-item wow fadeInRight" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8">
+            <div class="stat-item wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8">
                 <div class="stat">
                     <span class="stat-digit">5<span class="stat-character">%</span></span>
                     <span class="stat-description">Скидка при заказе<br> через услуги онлайнер</span>
@@ -478,9 +478,11 @@
                         <div class="faq__column">
                             <div class="faq__item wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8" data-collapse="#wedo_1">
                                 <div class="accordion__header">
-                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" itemprop="name">Есть ли какие-либо неожиданные расходы?</div>
+                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <p class="accordion__titletxt" itemprop="name">Есть ли какие-либо неожиданные расходы?</p>
+                                    </div>
                                 </div>
-                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  id="wedo_1">
+                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="wedo_1">
                                     <p class="accordion-text" itemprop="text">
                                         Никаких сюрпризов. Мы работаем с прозрачными ценами, которые заранее оговорены в строительных расчетах.
                                     </p>
@@ -488,9 +490,11 @@
                             </div>
                             <div class="faq__item wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8" data-collapse="#wedo_2">
                                 <div class="accordion__header">
-                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" itemprop="name">Вы работаете только в черте Минска?</div>
+                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <p class="accordion__titletxt" itemprop="name">Вы работаете только в черте Минска?</p>
+                                    </div>
                                 </div>
-                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  id="wedo_2">
+                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="wedo_2">
                                     <p class="accordion-text" itemprop="text">
                                         Мы помогаем нашим клиентам во всех 9-ти районах Минска. Также выезжаем по заказам в радиусе 30-ти километров Минской области. Выезды по заказам, связанным с коттеджами и дачными домами оговариваются индивидуально.
                                     </p>
@@ -498,9 +502,11 @@
                             </div>
                             <div class="faq__item wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8" data-collapse="#wedo_3">
                                 <div class="accordion__header">
-                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" itemprop="name">На какую гарантию можно рассчитывать?</div>
+                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <p class="accordion__titletxt" itemprop="name">На какую гарантию можно рассчитывать?</p>
+                                    </div>
                                 </div>
-                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  id="wedo_3">
+                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="wedo_3">
                                     <p class="accordion-text" itemprop="text">
                                         Гарантия на сантехнические работы варьируется от одного года до трёх в зависимости от выполняемых работ, качества материалов и условий эксплуатации.
                                     </p>
@@ -508,9 +514,11 @@
                             </div>
                             <div class="faq__item wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8" data-collapse="#wedo_4">
                                 <div class="accordion__header">
-                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" itemprop="name">Есть ли у вас акционные предложения?</div>
+                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <p class="accordion__titletxt" itemprop="name">Есть ли у вас акционные предложения?</p>
+                                    </div>
                                 </div>
-                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  id="wedo_4">
+                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="wedo_4">
                                     <p class="accordion-text" itemprop="text">
                                         На странице <a class="joint__link"></a>цены вы можете ознакомиться с тремя акционными пакетами и выбрать необходимый. Кроме того, при заказе любой услуги через онлайнер мы дарим 5% скидку от стоимости, указанной в прайсе.
                                     </p>
@@ -520,9 +528,11 @@
                         <div class="faq__column">
                             <div class="faq__item wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8" data-collapse="#wedo_5">
                                 <div class="accordion__header">
-                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" itemprop="name">Можем ли мы оставить Вам ключ и отлучиться?</div>
+                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <p class="accordion__titletxt" itemprop="name">Можем ли мы оставить Вам ключ и отлучиться?</p>
+                                    </div>
                                 </div>
-                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  id="wedo_5">
+                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="wedo_5">
                                     <p class="accordion-text" itemprop="text">
                                         Само собой - это частая практика. К примеру, мы много работаем с арендодателями, которым удобно отдать проект "под ключ" и вернуться, когда услуга или комплекс услуг будут закончены.
                                     </p>
@@ -530,9 +540,11 @@
                             </div>
                             <div class="faq__item wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8" data-collapse="#wedo_6">
                                 <div class="accordion__header">
-                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" itemprop="name">Нужно ли платить за вызов?</div>
+                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <p class="accordion__titletxt" itemprop="name">Нужно ли платить за вызов?</p>
+                                    </div>
                                 </div>
-                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  id="wedo_6">
+                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="wedo_6">
                                     <p class="accordion-text" itemprop="text">
                                         Под оплачиваемым выездом понимается первичный осмотр объекта с последующим составлением сметной документации и заключением договора. Его стоимость - 20 белорусских рублей.
                                     </p>
@@ -540,9 +552,11 @@
                             </div>
                             <div class="faq__item wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8" data-collapse="#wedo_7">
                                 <div class="accordion__header">
-                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" itemprop="name">Сколько времени займёт работа?</div>
+                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <p class="accordion__titletxt" itemprop="name">Сколько времени займёт работа?</p>
+                                    </div>
                                 </div>
-                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  id="wedo_7">
+                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="wedo_7">
                                     <p class="accordion-text" itemprop="text">
                                         На нашем сайте рядом с описанием каждой услуги указано среднее время выполнения её профессионалом.
                                     </p>
@@ -550,9 +564,11 @@
                             </div>
                             <div class="faq__item wow fadeInLeft" data-wow-delay=".2s"  data-wow-duration="2s"  data-wow-offset="8" data-collapse="#wedo_8">
                                 <div class="accordion__header">
-                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" itemprop="name">Работаете ли вы с юридическими лицами?</div>
+                                    <div class="accordion__title" itemscope itemprop="mainEntity" itemtype="https://schema.org/Question">
+                                        <p class="accordion__titletxt" itemprop="name">Работаете ли вы с юридическими лицами?</p>
+                                    </div>
                                 </div>
-                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer"  id="wedo_8">
+                                <div class="accordion__content" itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer" id="wedo_8">
                                     <p class="accordion-text" itemprop="text">
                                         На данный момент мы принимаем и выполняем заказы только от физических лиц.
                                     </p>
