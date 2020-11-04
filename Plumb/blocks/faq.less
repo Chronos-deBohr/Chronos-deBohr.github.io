@@ -60,15 +60,13 @@
     margin-top: 5px;
 }
 
-.accordion__header {
-    font-weight: 500;
-    margin-bottom: .5rem;
+.accordion__titletxt {
     position: relative;
 
     cursor: pointer;
 }
 
-.accordion__header:after {
+.accordion__titletxt:after {
     content: "";
     display: block;
     width: 16px;
@@ -107,9 +105,12 @@
     font-size: 0.9rem;
     color: #333;
     width: 95%;
+    font-weight: 500;
+    margin-bottom: .5rem;
 }
 .accordion-text {
     font-size: .9rem;
+    font-weight: 400;
 }
 
 @media (max-width: 575px) {
